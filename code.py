@@ -14,7 +14,7 @@ class CFG:
 
     image_gen_model = StableDiffusionPipeline.from_pretrained(
     CFG.image_gen_model_id, torch_dtype=torch.float16,
-    revision="fp16", use_auth_token='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', guidance_scale=9
+    revision="fp16", use_auth_token='use token from hugging face', guidance_scale=9
 )
 image_gen_model = image_gen_model.to(CFG.device)
 
